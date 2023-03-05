@@ -1,0 +1,117 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+}
+body {
+    margin: 0;
+    height: 100vh;
+    font-size: 1rem;
+
+}
+#root {
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+
+}
+
+.App {
+    width: 80vw;
+    height: 70vh;
+    box-shadow: 0px 0px 1px black;
+    border-radius: .3em;
+}
+header h1 {
+    text-align: center;
+    color: rgb(47, 29, 29);
+
+
+}
+header div {
+    width: 100px;
+    height: 6px;
+    border-radius: 3px;
+    background-color: blueviolet;
+    margin: auto;
+}
+.card {
+    display: flex;
+
+    justify-content: space-between;
+}
+.card .menu {
+ width: 30%;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+
+}
+.card .menu h3 {
+    margin: 1em;
+    padding: .3em;
+    transition: color .4s ease;
+}
+.menu h3:hover {
+ color: rgb(8, 104, 137);
+ cursor: pointer;
+}
+.card .card__main {
+    width: 65%;
+ 
+   
+}
+.card__main div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: .3em;
+    
+}
+.card__main div p {
+    opacity: .7;
+}
+.card__main div .icon {
+    font-size:1.5rem;
+    color: rgb(8, 104, 137);
+}
+.card__main h3 { 
+    letter-spacing: 3px;
+    color: rgb(20, 19, 19);
+    padding: .3em;
+}
+.card__main h4 {
+    background-color: rgb(152, 232, 147);
+    width: max-content;
+    padding: .4em .3em;
+    border-radius: .3em;
+    color:rgb(16, 130, 8);
+
+}
+.card__main h5 { 
+    margin:.2em;
+    padding: .3em;
+    opacity: .7;
+}
+button {
+    padding:.5em;
+    width: 200px;
+    letter-spacing: 2px;
+    border: none;
+    outline: none;
+    font-weight: 600;
+    border-radius: .3em;
+    color:lightslategray;
+    background-color: rgb(227, 227, 255);
+}
+button:hover {
+    color: rgb(227, 227, 255);
+    background-color: lightslategray;
+}

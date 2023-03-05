@@ -1,0 +1,117 @@
+:root {
+    --clr-gold: #c59d5f;
+    --clr-grey-1: hsl(209, 61%, 16%);
+    --clr-grey-5: hsl(210, 22%, 49%);
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+    font-family: 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;;
+}
+body {
+    height: 100vh;
+    margin: 0;
+    font-size: 1rem;
+}
+.App {
+    width: 90vw;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+header {
+    padding: .3em;
+}
+header h1 {
+    color: var(--clr-grey-1);
+}
+header div {
+    width: 90px;
+    height: 5px;
+    background-color: var(--clr-gold);
+    margin: auto;
+}
+.menu-wrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    width: 100%;
+    margin-top:1em;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    
+}
+.menu-items {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    width: 47%;
+
+    min-width: 450px;
+    padding: .5em;
+}
+.menu-items img {
+    
+    max-width: 200px;
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+    border: 5px solid var(--clr-gold);
+    border-radius: .2em;
+
+}
+.item__content {
+    width: 50%;
+    
+}
+.item__content .title {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 1px solid black;
+    border-bottom-style: dotted;
+    padding: .2em;
+    text-transform: capitalize;
+    color: var(--clr-grey-1);
+    
+}
+.title h4:last-child {
+    color: var(--clr-gold);
+
+}
+.item__content p {
+    color: var(--clr-grey-5);
+    padding: .3em;
+    margin-top: .2em;
+}
+
+.category-wrapper {
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    align-items: center;
+    justify-content: space-between;
+    margin-top:.8em ;
+    padding: .4em;
+}
+.category {
+    color: var(--clr-gold);
+    padding: .5em;
+    border-radius: .5em;
+    text-transform: capitalize;
+    transition:all .4s ease;
+    font-weight: 500;
+}
+.category:hover {
+   
+    color: white;
+    background-color: var(--clr-gold);
+    cursor: pointer;
+}
